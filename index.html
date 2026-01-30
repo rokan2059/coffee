@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew & Bean | Premium Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --coffee-espresso: #2A1810;
+        --coffee-mocha: #3D2B1F;
+        --coffee-caramel: #8B4513;
+        --coffee-cream: #FDFBF7;
+        --coffee-paper: #FCF9F2;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--coffee-cream);
+        color: var(--coffee-mocha);
+      }
+      h1, h2, h3, .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .bg-espresso { background-color: var(--coffee-espresso); }
+      .text-espresso { color: var(--coffee-espresso); }
+      .border-espresso { border-color: var(--coffee-espresso); }
+      
+      .bg-mocha { background-color: var(--coffee-mocha); }
+      .text-mocha { color: var(--coffee-mocha); }
+      
+      .bg-parchment { background-color: var(--coffee-cream); }
+      .bg-paper { background-color: var(--coffee-paper); }
+
+      /* Custom selection color */
+      ::selection {
+        background: var(--coffee-caramel);
+        color: white;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-[#3D2B1F]">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
