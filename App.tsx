@@ -471,7 +471,7 @@ const AdminDashboard: React.FC<{
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-3"><Globe size={28}/> Render Deployment Guide</h3>
                 <p className="opacity-80 mb-8 leading-relaxed">This app is optimized for Render. To link your laptop dashboard with customer phones, follow these steps:</p>
                 <div className="space-y-6">
-                  <div className="flex gap-4 items-start"><div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 font-bold">1</div><p className="text-sm">Go to **Render Dashboard** -> Select your service -> **Environment** tab.</p></div>
+                  <div className="flex gap-4 items-start"><div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 font-bold">1</div><p className="text-sm">Go to **Render Dashboard** &rarr; Select your service &rarr; **Environment** tab.</p></div>
                   <div className="flex gap-4 items-start"><div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 font-bold">2</div><p className="text-sm">Add a new variable: **API_KEY** with your Gemini key from Google AI Studio.</p></div>
                   <div className="flex gap-4 items-start"><div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 font-bold">3</div><p className="text-sm">For actual syncing between devices, enter your **Supabase URL** in the credentials section below.</p></div>
                 </div>
