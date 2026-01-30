@@ -26,9 +26,17 @@ export interface Order {
   status?: 'pending' | 'preparing' | 'ready' | 'completed' | 'cancelled';
   paymentMethod: PaymentMethod;
   paymentStatus: PaymentStatus;
+  source?: 'local' | 'cloud'; // Track where the order originated
+}
+
+export interface CloudConfig {
+  enabled: boolean;
+  apiKey: string;
+  projectUrl: string;
+  lastSync?: number;
 }
 
 export type View = 'home' | 'menu' | 'admin' | 'history' | 'cart';
-export type AdminSubView = 'items' | 'orders' | 'settings';
+export type AdminSubView = 'items' | 'orders' | 'cloud' | 'settings';
 
 export const CATEGORIES: Category[] = ['Hot Coffee', 'Ice Coffee', 'Tea', 'Specialty', 'Bakery'];
